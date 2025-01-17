@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>A simple library using javascript</h1>
+    <p id="main"></p>
+
+    <script type="text/javascript" src="library.js"></script>
+    <script>
+        const lib = new Library()
+        const addedBook = lib.addBook(1, "descricao1", "title1", "author1")
+        const addedBook2 = lib.addBook(1, "descricao2", "title2", "author2")
+        const addedBook3 = lib.addBook(3, "descricao3", "title3", "author3")
+        lib.removeBookById(1)
+        lib.updateBookById(3, "descricao2", "title2", "author2")
+        let books = lib.getBooks()
+
+    </script>
+</body>
+</html>
+
